@@ -306,6 +306,26 @@ footer {
     border-radius: 50%;
 }
 
+/*Critique page CSS*/
+#critiqueBanner {
+    background-image: url(../images/critiqueBanner.jpg);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid 3px #ce9144;
+    border-top: solid 3px #45376c;
+}
+
+/*Creativity page CSS*/
+#creativityBanner {
+    background-image: url(../images/creativityBanner.jpg);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid 3px #ce9144;
+    border-top: solid 3px #45376c;
+}
+
 
 
 /* Styles for large screen sizes*/
