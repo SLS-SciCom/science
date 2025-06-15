@@ -213,7 +213,28 @@ article.home {
     color: white;
 }
 
-/*Video on home page*/
+.bio ul li {
+    margin-bottom: 15px;
+}
+
+.bio span {
+    font-style: oblique;
+}
+
+#bioPhoto {
+    display: block;
+    margin: 3rem auto;
+    border-radius: 50%;
+
+}
+
+.bio {
+    color: rgba(74, 98, 107, .75);
+    background-color: rgba(206, 145, 68, 0.25);
+    padding: 2rem;
+}
+
+/*Video on home --coms-- page*/
 .video {
     position: relative;
     padding-bottom: 56.25%;
@@ -481,7 +502,7 @@ footer {
 
     article.home {
         border-bottom: none;
-        border-right: solid 1px rgba(74, 98, 107, 0.5);
+        border-right: none;
         padding-right: 2rem;
         margin-bottom: 2rem;
         display: flex;
