@@ -145,7 +145,7 @@ main h1 {
     color: #1c162b;
     margin-top: 2.5rem;
     font: 700 4rem "Libre Baskerville", serif;
-    letter-spacing: 2rem;
+    letter-spacing: 0.5rem;
     text-align: center;
 }
 
@@ -176,7 +176,7 @@ article img {
 /*Intro section*/
 #homeIntro {
     margin: 1rem 5rem;
-    line-height: 5rem;
+    line-height: 4rem;
 }
 
 #homeIntro p:first-child::first-letter {
@@ -190,7 +190,7 @@ article img {
     font: italic 1.5rem Georgia, serif;
     text-align: center;
     background-color: rgba(206, 145, 68, .25);
-    padding: 1.5rem 1rem 1rem;
+    padding: 2rem;
 }
 
 #introHighlight span {
@@ -204,7 +204,7 @@ article img {
         -2px -2px 2px silver,
         3px 3px 3px black;
     display: inline-block;
-    padding: 7rem;
+    padding: 5rem 2rem;
     margin-top: 1.25rem;
 }
 
@@ -223,7 +223,7 @@ article.home {
 .home h1 {
     font: 400 7rem "Ballet", cursive;
     color: white;
-    letter-spacing: 4rem;
+    letter-spacing: 1rem;
     background-color: rgba(28, 22, 43, 1);
 }
 
@@ -555,7 +555,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 6rem;
+        gap: 3rem;
     }
 
     section.home {
