@@ -144,8 +144,8 @@ main {
 main h1 {
     color: #1c162b;
     margin-top: 2.5rem;
-    font: 700 4rem "Libre Baskerville", serif;
-    letter-spacing: 0.5rem;
+    font: 700 3.5rem "Libre Baskerville", serif;
+    letter-spacing: 0.05rem;
     text-align: center;
 }
 
@@ -185,19 +185,19 @@ article img {
 }
 
 #introHighlight {
-    letter-spacing: .1rem;
+    letter-spacing: .05rem;
     color: #4a626b;
     font: italic 1.5rem Georgia, serif;
     text-align: center;
     background-color: rgba(206, 145, 68, .25);
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 #introHighlight span {
     background-image: url(../images/crucibleBkd.jpg);
     background-position: center;
     background-size: cover;
-    font: 400 2.5rem "Libre Baskerville", serif;
+    font: 400 1.8rem "Libre Baskerville", serif;
     color: white;
     text-shadow:
         0 0 2px black,
