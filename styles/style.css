@@ -332,20 +332,52 @@ h2#featureVideo {
 
 #rose {
     display: block;
-    margin: 3rem auto;
+    margin: 2rem auto;
+    border-top: solid 5px black;
 
 }
 
+#conceptsPageArticle p:first-of-type {
+    padding-top: 1.5rem;
+}
+
 #conceptsPageArticle2 {
-    font: 400 2rem "Libre Baskerville", serif;
-    color: rgba(69, 55, 108, 0.74);
-    background-color: rgba(206, 145, 68, 0.25);
+    color: white;
+    background-color: rgba(28, 22, 43, 1);
+    background: radial-gradient(at center right, darkMagenta, magenta, turquoise, cadetblue, cornflowerBlue, navy, midnightBlue, rgba(69, 55, 108, .5) 25%, rgba(69, 55, 108, 0.75), rgba(28, 22, 43, 1)50%);
     padding: 2rem;
     line-height: 150%;
+    margin-bottom: 2rem;
+}
+
+#conceptsPageArticle2 h2 {
+     font: italic 400 2.2rem "Libre Baskerville", serif;
+    color: white;
+    text-shadow:
+        0 0 2px black,
+        -2px -2px 2px silver,
+        3px 3px 5px black;
+    text-align: center;
 }
 
 #conceptsPageArticle2 li {
     padding-top: 1rem;
+}
+
+#curious1, #curious2 {
+    border: solid 2px silver;
+    display: block;
+    margin: 2rem auto;
+}
+
+#curiousBooks {
+    /*color: rgba(74, 98, 107, .75);*/
+    background-color: rgba(206, 145, 68, 0.25);
+    padding: 2rem;
+}
+
+#curiousBooks span {
+    font-style: italic;
 }
 
 /* Footer styles */
@@ -536,6 +568,11 @@ footer {
     }
 
     p#conceptsMI {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    
+    #conceptsPageArticle2 {
         grid-column-start: 1;
         grid-column-end: -1;
     }
