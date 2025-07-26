@@ -187,7 +187,7 @@ article img {
 #introHighlight {
     letter-spacing: .05rem;
     color: #4a626b;
-    font: italic 1.5rem Georgia, serif;
+    font: italic 2rem Georgia, serif;
     text-align: center;
     background-color: rgba(206, 145, 68, .25);
     padding: 2.5rem;
@@ -197,7 +197,7 @@ article img {
     background-image: url(../images/crucibleBkd.jpg);
     background-position: center;
     background-size: cover;
-    font: 400 1.8rem "Libre Baskerville", serif;
+    font: 400 2rem "Libre Baskerville", serif;
     color: white;
     text-shadow:
         0 0 2px black,
@@ -205,7 +205,7 @@ article img {
         3px 3px 3px black;
     display: inline-block;
     padding: 5rem 2rem;
-    margin-top: 1.25rem;
+    margin: 2rem;
 }
 
 
@@ -267,7 +267,7 @@ aside.bio section p {
 }
 
 .bio {
-    color: rgba(74, 98, 107, .75);
+    color: rgba(74, 98, 107, 1);
     background-color: rgba(206, 145, 68, 0.25);
     padding: 2rem;
 }
@@ -305,7 +305,7 @@ h2#featureVideo {
     border-top: solid 3px #45376c;
 }
 
-/*Map on Communication Page*/
+/*Communication Page general stylings
 .map {
     position: relative;
     padding-bottom: 56%;
@@ -318,7 +318,80 @@ h2#featureVideo {
     top: 0;
     left: 0;
     width: 100%;
+}*/
+
+#sageBook {
+    display: block;
+    margin: 2rem auto;
+    border: solid 3px silver;
+
 }
+
+#sageIntro p:first-of-type {
+    margin-top: 1rem;
+}
+
+#sageTopics {
+    color: white;
+    background-color: rgba(74, 98, 107, 1);
+    padding: 2rem;
+    line-height: 150%;
+    margin-bottom: 3rem;
+}
+
+#sageTopics h2 {
+    font: italic 400 2.2rem "Libre Baskerville", serif;
+    color: white;
+    text-shadow:
+        0 0 2px black,
+        -2px -2px 2px silver,
+        3px 3px 5px black;
+    text-align: center;
+}
+
+#sageTopics li, #sageDetails li {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#pullQuote {
+    font: italic 400 2.2rem "Libre Baskerville", serif;
+    text-align: center;
+    color: rgba(74, 98, 107, 1);
+    padding: 2rem;
+   
+}
+
+.question {
+    color: white;
+    background-color: rgba(28, 22, 43, 1);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+em {
+    font-weight: bold;
+    font-style: italic;
+}
+
+span.italic {
+    font-style: italic;
+}
+
+#sageDistinct {
+    font: 2rem Georgia, serif;
+    color: rgba(74, 98, 107, 1);
+    background-color: rgba(206, 145, 68, 0.25);
+     background-image: url(../images/crucibleBkd.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    
+    border-image: linear-gradient(rgba(255, 255, 255,.75)) fill 1;
+}
+
+
 
 /*Concepts page CSS*/
 #conceptsBanner {
@@ -526,6 +599,54 @@ footer {
         margin-left: 10%;
         margin-right: 10%;
     }
+    
+    #sageBook {
+        float: left;
+        margin-right: 2rem;
+    }
+    
+    section#sageTopics {
+        clear: both;
+    }
+    
+     .communicationPage article {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /*grid-template-rows: auto auto 1fr 1fr;*/
+        gap: 2rem;
+    }
+
+     .communicationPage article h1, #psyc, #sageIntro {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+  #sageTopics {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    #pullQuote {
+        grid-column-start: 2;
+        grid-column-end: -1;
+        align-self: center;
+    }
+    
+    #sageDetails {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    
+     #sageDistinct {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    
+    aside.video {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+     
 }
 
 /*Home Page Bio and Concepts Page Stylings*/
