@@ -349,7 +349,8 @@ h2#featureVideo {
     text-align: center;
 }
 
-#sageTopics li, #sageDetails li {
+#sageTopics li,
+#sageDetails li {
     padding-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -359,7 +360,7 @@ h2#featureVideo {
     text-align: center;
     color: rgba(74, 98, 107, 1);
     padding: 2rem;
-   
+
 }
 
 .question {
@@ -383,12 +384,12 @@ span.italic {
     font: 2rem Georgia, serif;
     color: rgba(74, 98, 107, 1);
     background-color: rgba(206, 145, 68, 0.25);
-     background-image: url(../images/crucibleBkd.jpg);
+    background-image: url(../images/crucibleBkd.jpg);
     background-position: center;
     background-size: cover;
     padding: 2rem;
-    
-    border-image: linear-gradient(rgba(255, 255, 255,.75)) fill 1;
+
+    border-image: linear-gradient(rgba(255, 255, 255, .75)) fill 1;
 }
 
 
@@ -424,7 +425,7 @@ span.italic {
 }
 
 #conceptsPageArticle2 h2 {
-     font: italic 400 2.2rem "Libre Baskerville", serif;
+    font: italic 400 2.2rem "Libre Baskerville", serif;
     color: white;
     text-shadow:
         0 0 2px black,
@@ -437,7 +438,13 @@ span.italic {
     padding-top: 1rem;
 }
 
-#curious1, #curious2 {
+#curious1,
+#curious2,
+#alchemScene,
+#alchemBiochem,
+#rooBook,
+#sadRoo,
+#crucible {
     border: solid 2px silver;
     display: block;
     margin: 2rem auto;
@@ -489,6 +496,30 @@ footer {
     border-bottom: solid 3px #ce9144;
     border-top: solid 3px #45376c;
 }
+
+#alchemBiochem,
+#crucible {
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    margin-bottom: 3rem;
+}
+
+#rooBookArticle {
+    color: white;
+    background-color: rgba(74, 98, 107, 1);
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+#rooBookArticle h2 {
+    color: white;
+}
+
+#rooBookArticle span {
+    background-color: rgba(255, 255, 255, .75);
+    padding: 1rem;
+}
+
 
 
 
@@ -599,54 +630,75 @@ footer {
         margin-left: 10%;
         margin-right: 10%;
     }
-    
+
     #sageBook {
         float: left;
         margin-right: 2rem;
     }
-    
+
     section#sageTopics {
         clear: both;
     }
-    
-     .communicationPage article {
+
+    .communicationPage article {
         display: grid;
         grid-template-columns: 2fr 1fr;
         /*grid-template-rows: auto auto 1fr 1fr;*/
         gap: 2rem;
     }
 
-     .communicationPage article h1, #psyc, #sageIntro {
+    .communicationPage article h1,
+    #psyc,
+    #sageIntro {
         grid-column-start: 1;
         grid-column-end: -1;
     }
 
-  #sageTopics {
+    #sageTopics {
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    
+
     #pullQuote {
         grid-column-start: 2;
         grid-column-end: -1;
         align-self: center;
     }
-    
+
     #sageDetails {
         grid-column-start: 1;
         grid-column-end: -1;
     }
-    
-     #sageDistinct {
+
+    #sageDistinct {
         grid-column-start: 1;
         grid-column-end: -1;
     }
-    
+
     aside.video {
         grid-column-start: 1;
         grid-column-end: -1;
     }
-     
+
+
+    /*Creativity page*/
+
+    #alchemBiochem {
+        float: left;
+        margin-right: 2rem;
+    }
+
+    #alchemScene {
+        clear: both;
+        float: right;
+        margin-left: 2rem;
+    }
+    
+    #crucible {
+        clear: both;
+    }
+
+
 }
 
 /*Home Page Bio and Concepts Page Stylings*/
@@ -680,7 +732,7 @@ footer {
         display: grid;
         grid-template-columns: 2fr 1fr;
         /*grid-template-rows: auto auto 1fr 1fr;*/
-        gap: 2rem;
+        gap: 3rem;
     }
 
     #conceptsPageSection h1 {
@@ -692,7 +744,7 @@ footer {
         grid-column-start: 1;
         grid-column-end: -1;
     }
-    
+
     #conceptsPageArticle2 {
         grid-column-start: 1;
         grid-column-end: -1;
