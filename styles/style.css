@@ -444,8 +444,9 @@ span.italic {
 #alchemBiochem,
 #rooBook,
 #sadRoo,
-#crucible {
-    border: solid 2px silver;
+#crucible,
+#butterflyWing, #liesBook {
+    border: solid 3px silver;
     display: block;
     margin: 2rem auto;
 }
@@ -456,7 +457,7 @@ span.italic {
     padding: 2rem;
 }
 
-#curiousBooks span {
+#curiousBooks span, #liesBookBlurb span {
     font-style: italic;
 }
 
@@ -485,6 +486,16 @@ footer {
     background-size: cover;
     border-bottom: solid 3px #ce9144;
     border-top: solid 3px #45376c;
+    
+}
+
+#critiqueIntro {
+    line-height: 150%;
+}
+
+#beige {
+    background-color: aliceblue;
+    padding: 1rem;
 }
 
 /*Creativity page CSS*/
@@ -504,14 +515,14 @@ footer {
     margin-bottom: 3rem;
 }
 
-#rooBookArticle {
+#rooBookArticle, #liesBookBlurb {
     color: white;
     background-color: rgba(74, 98, 107, 1);
     padding: 2rem;
     margin-bottom: 3rem;
 }
 
-#rooBookArticle h2 {
+#rooBookArticle h2, #liesBookBlurb h2 {
     color: white;
 }
 
@@ -631,7 +642,7 @@ footer {
         margin-right: 10%;
     }
 
-    #sageBook {
+    #sageBook, #butterflyWing {
         float: left;
         margin-right: 2rem;
     }
@@ -643,7 +654,7 @@ footer {
     .communicationPage article {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        /*grid-template-rows: auto auto 1fr 1fr;*/
+        /*grid-template-rows: auto auto auto;*/
         gap: 2rem;
     }
 
@@ -679,7 +690,44 @@ footer {
         grid-column-start: 1;
         grid-column-end: -1;
     }
+    
+    /*Critique Page*/
+    
+    #critiquePageSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    
+  #critiquePageSection h1,
+    #conceptsMI {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    
+    }
 
+    #critqueIntro {
+        grid-column-start: 1;
+        grid-column-end: 2;
+       
+    }
+    
+     #liesBookBlurb {
+        grid-column-start: 2;
+        grid-column-end: -1;
+    
+    }
+    
+     #beige {
+        clear: both;
+         grid-column-start: 1;
+        grid-column-end: -1;
+    
+        
+        
+    }
+    
+   
 
     /*Creativity page*/
 
@@ -754,6 +802,8 @@ footer {
         float: left;
         margin-right: 2rem;
     }
+    
+    
 
 }
 
